@@ -77,9 +77,13 @@ static void color(String colours) {
 		h.setAngle(0);
 		h.penDown();
 		h.move(hei);
-		h.turn(90);
-		h.move(40);
-		h.turn(90);
+		if(height.equals("small")) {
+			drawPointyRoof();
+		}else if(height.equals("medium")) {
+			drawPointyRoof();
+		}else if(height.equals("large")) {
+			drawFlatRoof();
+		}
 		h.move(hei);
 		h.setPenColor(Color.green);
 		h.turn(270);
@@ -93,9 +97,10 @@ static void color(String colours) {
 		h.turn(90);
 	}
 	static void drawPointyRoof() {
+		
 		h.turn(45);
 		h.move(28);
-		h.turn(315);
+		h.turn(90);
 		h.move(28);
 		h.turn(45);
 	}
