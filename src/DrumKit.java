@@ -39,17 +39,18 @@ public class DrumKit extends MouseAdapter {
    	 // 8. Put the name of your image in a String variable.
     String drumPicture= "images.jpg";
    	 // 9. Edit the next line to use your String variable
-// drumLabelWithImage = createLabelImage(drumImageString);
+ drumLabelWithImage = createLabelImage(drumPicture);
    	 
    	 // 10. Add the image to the panel
-    
+    panel.add(drumLabelWithImage);
    	 // 11. Set the layout of the panel to "new GridLayout()"
     
    	 // 12. call the pack() method on the frame
    	 
    	 // 13. add a mouse listener to drumLabelWithImage.
-
+drumLabelWithImage.addMouseListener(this);
     }
+    
 
     public void mouseClicked(MouseEvent e) {
    	 // 14. When the mouse is clicked, print "mouse clicked"
