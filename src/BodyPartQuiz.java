@@ -25,21 +25,59 @@ public class BodyPartQuiz {
 		// If they got the answer right:
 			if(pic1.equalsIgnoreCase("Dr. Bravestone")) {
 		// -- Tell them they are correct.
-				JOptionPane.showMessageDialog(null, "Correct!");
-		// -- Increase the score by 1
-		score=score+1;
-			}
-			else if(pic1.equalsIgnoreCase("Spencer")) {
-				// -- Tell them they are correct.
-						JOptionPane.showMessageDialog(null, "Correct!");
-				// -- Increase the score by 1
 				score=score+1;
-					}
-		// Otherwise:
+				JOptionPane.showMessageDialog(null, "Correct! Your score is "+score);
+		// -- Increase the score by 1
+
+			}
+		else if (pic1.equalsIgnoreCase("Spencer")) {
+			// -- Tell them they are correct.
+			score=score+1;
+			JOptionPane.showMessageDialog(null, "Correct! Your score is "+score);
+			// -- Increase the score by 1
+	
+		}
+					// Otherwise:
 		// -- Tell them they are wrong
+else {
+	JOptionPane.showMessageDialog(null, "You are incorrect. Try the next question! Your score is 0.");
+			}
+			
+			
+			
 		// Use the method below to show the next image
-		// Show the score
-		// .... repeat for all your images.....
+			showNextImage();
+			window.setSize(150, 100);
+			
+			String pic2= JOptionPane.showInputDialog("Who is this person?");
+				if(pic2.equalsIgnoreCase("Heidi Klum")) {
+					score=score+1;
+					JOptionPane.showMessageDialog(null, "Correct! Your answer is "+score);
+				}
+				else if(pic2.equalsIgnoreCase("Heidi")) {
+					score=score+1;
+							JOptionPane.showMessageDialog(null, "Correct! Your score is "+score);	
+						}
+	else {
+		score=score+0;
+		JOptionPane.showMessageDialog(null, "You are incorrect. Try the next question! Your score is "+score);
+	
+	}
+				
+				
+				
+				showNextImage();
+				window.setSize(90, 175);
+				
+				String pic3= JOptionPane.showInputDialog("Who is this person?");
+					if(pic3.equalsIgnoreCase("Marcelo")) {
+						score=score+1;
+						JOptionPane.showMessageDialog(null, "Correct! Your score is ");
+				score=score+1;
+					}else {
+			JOptionPane.showMessageDialog(null, "You are incorrect. Try the next question! Your score is"+score);
+		}
+				
 	}
 	public void showNextImage() {
 		window.removeAll();
