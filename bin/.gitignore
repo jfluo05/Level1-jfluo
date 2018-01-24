@@ -1,12 +1,10 @@
+/.DS_Store
 /BodyPartQuiz.class
 /Cymbal.wav
-/Dr.Bravestone.jpg
 /DrumKit.class
 /DuelingButtons.class
-/HeidiKlum.jpg
 /Houses.class
 /HousesTester.class
-/Marcelo.jpg
 /MyFirstSwingGUI.class
 /PhotoQuiz.class
 /SingleDrumHit.wav
@@ -14,4 +12,7 @@
 /images.jpg
 /java.png
 /robot.jar
-/.DS_Store
+/FortuneCookie.class
+/RunFortuneCookie.class
+/SoundEffectsMachine.class
+/wav-sounds.png
