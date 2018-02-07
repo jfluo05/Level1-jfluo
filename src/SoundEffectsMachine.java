@@ -14,7 +14,7 @@ public class SoundEffectsMachine implements MouseListener {
 	JPanel panel = new JPanel();
 	JButton drumButton = new JButton();
 	JButton cymbalButton= new JButton();
-	JButton SlotMachineButton= new JButton();
+	JButton slotMachineButton= new JButton();
 	public static void main(String[] args) {
 		SoundEffectsMachine sem = new SoundEffectsMachine();
 		sem.buildGUI();
@@ -25,15 +25,22 @@ public class SoundEffectsMachine implements MouseListener {
 		frame.setSize(1000, 1000);
 		frame.setTitle("Jessica's JFrame");
 		frame.add(panel);
+		
+		
 		panel.add(drumButton);
 		panel.add(cymbalButton);
-		panel.add(SlotMachineButton);
+		panel.add(slotMachineButton);
+		
+		
 		drumButton.addMouseListener(this);
-		SlotMachineButton.addMouseListener(this);
-		drumButton.setText("Drum Sound");
+		slotMachineButton.addMouseListener(this);
 		cymbalButton.addMouseListener(this);
+		
+		drumButton.setText("Drum Sound");
 		cymbalButton.setText("Cymbal Sound");
-		SlotMachineButton.setText("Slot Machine Button");
+		slotMachineButton.setText("Slot Machine Button");
+		frame.setTitle("Sound Effects Machine");
+		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
@@ -48,10 +55,10 @@ public class SoundEffectsMachine implements MouseListener {
 			playSound("SingleDrumHit.wav");
 		}else if(buttonClicked==cymbalButton) {
 			playSound("Cymbal.wav");
-		}else if(buttonClicked==SlotMachineButton);
+		}else if(buttonClicked==slotMachineButton) {
 			playSound("SlotMachine.wav");
 	}
-
+	}
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
